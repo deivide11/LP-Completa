@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termas PACU - Hospedagem no Paraíso</title>
+    <meta name="description" content="Hospede-se em nosso resort e aproveite acesso ilimitado ao parque durante toda sua estadia. Quartos confortáveis e experiência completa.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./style.css">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge animate-fade-in-up">
+                <i class="bi bi-building"></i>
+                <span>Hospedagem</span>
+            </div>
+            <h1 class="hero-title animate-fade-in-up">
+                Durma no <span class="highlight">Paraíso</span>
+            </h1>
+            <p class="hero-subtitle animate-fade-in-up">
+                Hospede-se em nossos apartamentos e aproveite <strong>acesso ilimitado</strong> ao parque durante toda sua estadia!
+            </p>
+            <a href="#quartos" class="btn-primary-custom cta-pulse animate-fade-in-up">
+                Ver Acomodações <i class="bi bi-bed ms-2"></i>
+            </a>
+        </div>
+        <header class="floating-header">
+        <div class="container">
+            <div class="header-box d-flex align-items-center justify-content-between">
+
+            <!-- LOGO -->
+            <div class="logo">
+                TERMAS<span>PACU</span>
+            </div>
+
+            <!-- MENU DESKTOP -->
+            <nav class="d-none d-lg-flex gap-4">
+            <a href="#atracoes" class="nav-link-custom">Beneficios</a>
+            <a href="#video" class="nav-link-custom">Acomodações</a>
+            <a href="#convite" class="nav-link-custom">Fazer Reserva</a>
+            </nav>
+
+
+            <!-- BOTÃO DESKTOP -->
+            <a href="#contato" class="btn btn-header d-none d-lg-inline-flex" style="background-color: #00a3ad; color: white;">
+                Fale Conosco
+            </a>
+
+            <!-- BOTÃO MENU MOBILE -->
+            <button 
+                class="btn d-lg-none"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#menuMobile"
+            >
+                ☰
+            </button>
+
+            </div>
+        </div>
+        </header>
+
+
+        <div class="offcanvas offcanvas-end" style="z-index: 9999;" tabindex="-1" id="menuMobile">
+            <style>
+                .offcanvas-header{
+                    padding: 35px;
+                }
+            </style>
+            <div class="offcanvas-header">
+                <h5 class="logo">TERMAS<span>PACU</span></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="offcanvas-body d-flex flex-column gap-3" style="padding: 35px;">
+                <a href="#atracoes" class="nav-link-custom" data-bs-dismiss="offcanvas">Beneficios</a>
+                <a href="#video" class="nav-link-custom" data-bs-dismiss="offcanvas">Acomodações</a>
+                <a href="#convite" class="nav-link-custom" data-bs-dismiss="offcanvas">Fazer Reserva</a>
+
+                <a href="#contato" class="btn mt-3" style="background-color: #00a3ad; color: white;">
+                Fale Conosco
+                </a>
+            </div>
+    </section>
+
+    <!-- BENEFÍCIOS SECTION -->
+    <section class="beneficios-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <div class="beneficio-item">
+                        <div class="beneficio-icon"><i class="bi bi-ticket-perforated"></i></div>
+                        <h3>Acesso ao Parque</h3>
+                        <p>Entrada ilimitada durante a estadia</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="beneficio-item">
+                        <div class="beneficio-icon"><i class="bi bi-cup-hot"></i></div>
+                        <h3>Café da Manhã</h3>
+                        <p>Buffet completo incluso</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="beneficio-item">
+                        <div class="beneficio-icon"><i class="bi bi-wifi"></i></div>
+                        <h3>Wi-Fi Grátis</h3>
+                        <p>Internet em todos os ambientes</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="beneficio-item">
+                        <div class="beneficio-icon"><i class="bi bi-car-front"></i></div>
+                        <h3>Estacionamento</h3>
+                        <p>Vaga gratuita para hóspedes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- HOSPEDAGEM SECTION -->
+<section id="hospedagem" class="hospedagem-section">
+    <div class="container">
+        <div class="text-center">
+            <span class="section-badge"><i class="bi bi-house-heart"></i> Acomodações</span>
+            <h2 class="section-title">Escolha Sua <span class="highlight">Acomodação</span></h2>
+            <p class="section-subtitle">
+                Conforto e comodidade para você e sua família descansarem após um dia de diversão!
+            </p>
+        </div>
+
+        <div class="row g-4">
+            <!-- Apartamento -->
+            <div class="col-md-6 col-lg-4">
+                <div class="hospedagem-card">
+                    <div class="hospedagem-header">
+                        <div class="hospedagem-icon blue"><i class="bi bi-door-closed"></i></div>
+                        <h3 class="hospedagem-title">Apartamento</h3>
+                        <p class="hospedagem-capacidade">Até 3 pessoas</p>
+                        <div class="hospedagem-preco">
+                            <div>
+                                <span style="font-size: 0.875rem; color: var(--gray-medium);">R$</span>
+                                <span class="hospedagem-preco-valor">250</span>
+                            </div>
+                            <span class="hospedagem-preco-periodo">/diária</span>
+                        </div>
+                    </div>
+                    <div class="hospedagem-body">
+                        <p class="hospedagem-descricao">
+                            Nossos apartamentos são quartos aconchegantes que acomodam até 3 pessoas, com estrutura completa para seu descanso.
+                        </p>
+                        <ul class="hospedagem-beneficios">
+                            <li><i class="bi bi-check-circle-fill"></i><span>1 cama de solteiro + 1 cama de casal</span></li>
+                            <li><i class="bi bi-check-circle-fill"></i><span>Ventilador de teto</span></li>
+                            <li><i class="bi bi-check-circle-fill"></i><span>Banheiro individual</span></li>
+                            <li><i class="bi bi-check-circle-fill"></i><span>TV</span></li>
+                            <li><i class="bi bi-check-circle-fill"></i><span>Wi-Fi</span></li>
+                            <li><i class="bi bi-check-circle-fill"></i><span>Frigobar</span></li>
+                        </ul>
+                        <button class="btn-reservar" onclick="window.open('https://wa.me/5500000000000?text=Olá! Gostaria de reservar um Apartamento!', '_blank')">
+                            Reservar Agora
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Casa de Veraneio (Destaque) -->
+            <div class="col-md-6 col-lg-4">
+                <div class="hospedagem-card destaque">
+                    <div class="hospedagem-badge"><i class="bi bi-star-fill"></i> Carro Chefe</div>
+                    <div class="hospedagem-header">
+                        <div class="hospedagem-icon orange"><i class="bi bi-house-fill"></i></div>
+                        <h3 class="hospedagem-title">Casa de Veraneio</h3>
+                        <p class="hospedagem-capacidade">Até 10 pessoas</p>
+                        <div class="hospedagem-preco">
+                            <div>
+                                <span style="font-size: 0.875rem; color: var(--gray-medium);">R$</span>
+                                <span class="hospedagem-preco-valor">890</span>
+                            </div>
+                            <span class="hospedagem-preco-periodo">/diária</span>
+                        </div>
+                    </div>
+                    <div class="hospedagem-body">
+                        <p class="hospedagem-descricao">
+                            Apartamentos e casas aconchegantes próximos ao parque, ideais para famílias e grupos. Estrutura completa para seu descanso e conforto, seja para uma noite ou um fim de semana inteiro.
+                        </p>
+                        <ul class="hospedagem-beneficios">
+                            <li><i class="bi bi-check-circle-fill"></i><span>Múltiplos quartos</span></li>
+                            <li><i class="bi bi-check-circle-fill"></i><span>Sala de estar completa</span></li>
+                            <li><i class="bi bi-check-circle-fill"></i><span>Cozinha equipada</span></li>
+                            <li><i class="bi bi-check-circle-fill"></i><span>Varanda</span></li>
+                            <li><i class="bi bi-check-circle-fill"></i><span>Wi-Fi em toda casa</span></li>
+                            <li><i class="bi bi-check-circle-fill"></i><span>Estacionamento</span></li>
+                            <li><i class="bi bi-check-circle-fill"></i><span>Acesso ao parque</span></li>
+                        </ul>
+                        <button class="btn-reservar" onclick="window.open('https://wa.me/5500000000000?text=Olá! Gostaria de reservar uma Casa de Veraneio!', '_blank')">
+                            Reservar Agora
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Em Breve -->
+            <div class="col-md-6 col-lg-4">
+                <div class="hospedagem-card">
+                    <div class="hospedagem-header">
+                        <div class="hospedagem-icon green"><i class="bi bi-calendar-event"></i></div>
+                        <h3 class="hospedagem-title">Em Breve</h3>
+                        <p class="hospedagem-capacidade">24 Apartamentos</p>
+                        <div class="hospedagem-preco">
+                            <div>
+                                <span style="font-size: 0.875rem; color: var(--gray-medium);">A partir de</span>
+                                <span class="hospedagem-preco-valor">Abril</span>
+                            </div>
+                            <span class="hospedagem-preco-periodo">2024</span>
+                        </div>
+                    </div>
+                    <div class="hospedagem-body">
+                        <p class="hospedagem-descricao">
+                            Estamos preparando 24 novos apartamentos com toda a estrutura e conforto que você merece!
+                        </p>
+                        <ul class="hospedagem-beneficios">
+                            <li><i class="bi bi-check-circle-fill"></i><span>Estrutura moderna</span></li>
+                            <li><i class="bi bi-check-circle-fill"></i><span>Design inovador</span></li>
+                            <li><i class="bi bi-check-circle-fill"></i><span>Tecnologia de ponta</span></li>
+                            <li><i class="bi bi-check-circle-fill"></i><span>Conforto máximo</span></li>
+                            <li><i class="bi bi-check-circle-fill"></i><span>Proximidade ao parque</span></li>
+                            <li><i class="bi bi-check-circle-fill"></i><span>Preços especiais</span></li>
+                        </ul>
+                        <button class="btn-em-breve" disabled>
+                            Em Breve
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- EXPERIÊNCIA SECTION -->
+    <section class="experiencia-section">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <img src="images/convite-especial.png" alt="Experiência no Termas PACU" class="experiencia-img">
+                </div>
+                <div class="col-lg-6">
+                    <span class="section-badge"><i class="bi bi-sun"></i> Experiência Completa</span>
+                    <div class="experiencia-content">
+                        <h2>Mais que uma <span class="highlight">Hospedagem</span></h2>
+                        <p>
+                            Ao se hospedar conosco, você tem acesso a uma experiência completa de lazer e relaxamento. 
+                            Aproveite todas as atrações do parque sem se preocupar com horários!
+                        </p>
+                        <ul class="experiencia-list">
+                            <li>
+                                <div class="experiencia-icon" style="background: var(--blue-water);">
+                                    <i class="bi bi-cup-hot"></i>
+                                </div>
+                                <span>Café da manhã completo das 7h às 10h</span>
+                            </li>
+                            <li>
+                                <div class="experiencia-icon" style="background: var(--orange-primary);">
+                                    <i class="bi bi-ticket-perforated"></i>
+                                </div>
+                                <span>Acesso ao parque durante toda estadia</span>
+                            </li>
+                            <li>
+                                <div class="experiencia-icon" style="background: var(--green-tropical);">
+                                    <i class="bi bi-moon-stars"></i>
+                                </div>
+                                <span>Piscinas noturnas exclusivas para hóspedes</span>
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/5500000000000?text=Olá! Gostaria de fazer uma reserva no Termas PACU!" 
+                           target="_blank" class="btn-whatsapp whatsapp-shake">
+                            <i class="bi bi-whatsapp me-2"></i> Fazer Reserva
+                        </a>
+                        <style>
+                            .btn-whatsapp {
+                            background: #25D366; color: var(--white); font-family: var(--font-display);
+                            font-size: 1rem; text-transform: uppercase; padding: 1rem 2rem; border: none;
+                            border-radius: 50px; transition: all 0.3s ease; box-shadow: var(--shadow-md);
+                            text-decoration: none; display: inline-block;
+                            }
+                            .btn-whatsapp:hover { background: #128C7E; color: var(--white); transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+        
+                        </style>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+    ============================================ -->
+    <footer class="footer-simple">
+        <div class="container">
+      
+          <!-- CTA -->
+          <div class="footer-cta text-center mb-5">
+            <h4>Quer viver momentos inesquecíveis?</h4>
+            <p>Fale agora com nosso especialista e descubra todas as vantagens.</p>
+      
+            <a href="https://wa.me/5514000000000" target="_blank" class="btn btn-whatsapp">
+              <i class="bi bi-whatsapp me-2"></i>
+              Falar no WhatsApp
+            </a>
+          </div>
+      
+          <!-- DIVISÃO -->
+          <hr class="footer-divider">
+      
+          <!-- CONTEÚDO -->
+          <div class="row align-items-center gy-4">
+      
+            <!-- LOGO -->
+            <div class="col-lg-4 text-center text-lg-start">
+              <div class="footer-logo">
+                TERMAS<span>PACU</span>
+              </div>
+              <p class="footer-text">
+                O maior termas da região.<br>
+                Diversão, lazer e experiências únicas o ano todo.
+              </p>
+            </div>
+      
+            <!-- LINKS -->
+            <div class="col-lg-4 text-center">
+              <nav class="footer-nav">
+                <a href="#atracoes">Beneficios</a>
+                <a href="#video">Acomodações</a>
+                <a href="#convite">Fazer Reserva</a>
+                <a href="#contato">Contato</a>
+              </nav>
+            </div>
+      
+            <!-- REDES -->
+            <div class="col-lg-4 text-center text-lg-end">
+              <div class="footer-social">
+                <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+              </div>
+              <p class="footer-copy">
+                © 2025 Termas Pacu. Todos os direitos reservados.
+              </p>
+            </div>
+      
+          </div>
+      
+        </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('animate-fade-in-up');
+            });
+        }, { threshold: 0.2, rootMargin: '0px 0px -50px 0px' });
+        
+        document.querySelectorAll('.quarto-card, .beneficio-item').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
