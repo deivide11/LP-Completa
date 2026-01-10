@@ -25,7 +25,7 @@
             --orange-dark: #D45003;
             --yellow-accent: #F1B434;
             --green-tropical: #55A630;
-            --blue-water: #0077B6;
+            --blue-water: #0da9e0;
             --purple-accent: #9B59B6;
             --red-accent: #f26431;
             --white: #FFFFFF;
@@ -196,6 +196,229 @@
             .section-title { font-size: 1.75rem; }
             .btn-primary-custom, .btn-whatsapp { padding: 0.875rem 1.5rem; font-size: 0.875rem; }
         }
+
+
+
+               /* ============================================
+           ATRAÇÕES SECTION
+        ============================================ */
+        .atracoes-section {
+            padding: 5rem 0;
+            background: var(--white);
+        }
+
+        .section-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--orange-primary);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 5vw, 3rem);
+            color: var(--black);
+            margin-bottom: 1rem;
+        }
+
+        .section-title .highlight {
+            color: var(--orange-primary);
+        }
+
+        .section-subtitle {
+            color: var(--gray-medium);
+            font-size: 1.125rem;
+            max-width: 600px;
+            margin: 0 auto 3rem;
+        }
+
+        /* Attraction Cards */
+        .excursao-box{
+        position: absolute;
+        padding: 15px 20px;
+        }
+
+        .text-box{
+        padding: 10px 20px;
+        font-size: 15px;
+        border-radius: 50px;
+        }
+
+        .card{
+        padding: 0;
+        width: 100%;
+        height: 360px;
+        border-radius: 25px;
+        }
+
+        .card img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+        margin-bottom: 0;
+        }
+
+        .excursao-text{
+        padding: 0px 60px 0px 0px;
+        }
+
+        .excursions__box {
+        position: relative;
+        /* overflow: hidden; */
+        border-radius: 20px;
+        transition: transform 0.3s ease;
+        }
+
+        .excursions__box-image {
+        position: relative;
+        }
+
+        .excursions__box-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .excursions__box-leg {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        padding: 8px 20px;
+        color: white;
+        font-weight: bold;
+        border-radius: 20px;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        }
+
+        .blue{
+        color: #00a9e0 ;
+        }
+
+        .excursions__box-leg.groups {
+        background-color: #27a4f2;
+        }
+
+        .excursions__box-leg.best-age {
+        background-color: #00a3ad;
+        }
+
+        .excursions__box-leg.school {
+        background-color: #e91e63;
+        }
+
+        .excursions__box-element-groups,
+        .excursions__box-element-best-age,
+        .excursions__box-element-school {
+        overflow: visible;
+        position: absolute;
+        pointer-events: none;
+        z-index: 2;
+        }
+
+        .excursions__box-element-groups {
+        bottom: 30px;
+        left: -35px;
+        width: 200px !important;
+        height: auto;
+        fill: #00a9e0;
+        }
+
+        .excursions__box-element-best-age {
+        position: absolute;
+        top: -50px;
+        right: 0px;
+        width: 180px;
+        height: auto;
+        z-index: 2;
+        fill: #00a3ad;
+        }
+
+        .svg-wrapper{
+        max-width: 150px;
+        width: 100%;
+        /* overflow: hidden; */
+        margin: 0 auto;
+        }
+
+        .excursions__box-element-school {
+        bottom: 50px;
+        right: 90px;
+        width: 40px;
+        height: auto;
+        fill: #e91e63;
+        }
+
+        .title-excursao{
+        color: #00a9e0;
+        }
+
+        .p-excursao{
+        color: #797563;
+        }
+
+        @media (max-width: 991px) {
+        .excursao-text{
+            width: 100%;
+            padding: 0px 0px 50px 0px;
+        }
+
+        .svg-wrapper {
+            max-width: 200px;
+        }
+
+        .onda-banner{
+            height: 50vh;
+        }
+
+        .excursao-banner{
+            height: 49vh;
+        }
+
+        .excursao-title{
+            top: 50%;
+            font-size: 3rem;
+        }
+        }
+        
+        @media (max-width: 568px) {
+        }
+        
+        @media (max-width: 480px) {
+        .excursions__box-element-groups{
+            bottom: 80px;
+            right: 120px;
+        }
+        .svg-wrapper {
+            max-width: 100px;
+        }
+
+        .excursao-banner{
+            height: 39vh;
+        }
+
+        .excursao-title {
+            top: 60%;
+            font-size: 2rem;
+        }
+        
+        .excursao-title p{
+            font-size: 15px;
+        }
+        .onda-banner {
+            height: 40vh;
+        }
+        }
+        
     </style>
 </head>
 <body>
@@ -214,7 +437,7 @@
             <p class="hero-subtitle animate-fade-in-up">
                 Adquira seus ingressos com <strong>desconto exclusivo</strong> e aproveite o melhor parque termal da região!
             </p>
-            <a href="#pacotes" class="btn-primary-custom cta-pulse animate-fade-in-up">
+            <a href="#convite" class="btn-primary-custom cta-pulse animate-fade-in-up">
                 Ver Preços e Pacotes <i class="bi bi-arrow-down-circle ms-2"></i>
             </a>
         </div>
@@ -229,9 +452,9 @@
     
                 <!-- MENU DESKTOP -->
                 <nav class="d-none d-lg-flex gap-4">
-                <a href="#atracoes" class="nav-link-custom">Ingressos</a>
-                <a href="#video" class="nav-link-custom">Atrações</a>
-                <a href="#convite" class="nav-link-custom">Garanta já</a>
+                <a href="#atracoes" class="nav-link-custom">Atrações</a>
+                <a href="#video" class="nav-link-custom">Garanta Já</a>
+                <a href="#convite" class="nav-link-custom">Ingressos</a>
                 </nav>
     
     
@@ -265,10 +488,10 @@
                 </div>
     
                 <div class="offcanvas-body d-flex flex-column gap-3" style="padding: 35px;">
-                    <a href="#atracoes" class="nav-link-custom" data-bs-dismiss="offcanvas">Ingressos</a>
-                    <a href="#video" class="nav-link-custom" data-bs-dismiss="offcanvas">Atrações</a>
-                    <a href="#convite" class="nav-link-custom" data-bs-dismiss="offcanvas">Garanta já</a>
-    
+                    <a href="#atracoes" class="nav-link-custom" data-bs-dismiss="offcanvas">Atrações</a>
+                    <a href="#video" class="nav-link-custom" data-bs-dismiss="offcanvas">Garanta Já</a>
+                    <a href="#convite" class="nav-link-custom" data-bs-dismiss="offcanvas">Ingressos</a>
+
                     <a href="#contato" class="btn mt-3" style="background-color: #f26431; color: white;">
                     Fale Conosco
                     </a>
@@ -310,9 +533,111 @@
             </div>
         </div>
     </section>
+    
+    <!-- ============================================
+         ATRAÇÕES SECTION
+    ============================================ -->
+    <section id="atracoes" class="atracoes-section">
+        <div class="container">
+            <div class="text-center">
+                <!-- <span class="section-badge">
+                    Nossas Atrações
+                </span> -->
+                <h2 class="section-title">
+                    Mais de <span class="highlight">20 Atrações</span>
+                </h2>
+                <p class="section-subtitle">
+                    e 80% de piscinas aquecidas para você curtir <strong>o ano todo</strong>!
+                </p>
+            </div>
+
+            <!-- Attraction Cards -->
+            <div class="row py-4 my-5 text-center">
+                <!-- Piscina de Ondas -->
+                <div class="col-12 col-md-4 mb-5 px-xl-4 excursions__box">
+                    <svg viewBox="0 0 600 100" class="excursions__box-element-groups svg-wrapper">
+                    <title>onda</title>
+                    <g id="Camada_x0020_1">
+                        <path d="m431.6 67.7c-14.3 0-22.1-2.1-33.5-8.6-1.4-0.9-3.2-1.8-4.7-2.8-19.1-11.9-35.8-42.2-58-25.3-6.6 5-11.6 11.7-17.8 16.9l-9.6 7.8c-13.9 10.3-33.9 17.3-52.6 17.3-22.8 0-44.7-5.1-62.6-18.4-5.4-4-10-8.3-14.7-13-1.7-1.7-2.8-3.2-4.3-4.9-1.4-1.6-2.9-3.5-4.1-5.2-5.7-8.7-11.4-18.1-22.9-10.5-2.6 1.6-3.7 3.6-5.7 5.9-4.5 5.1-8.6 10.6-13.8 15-1.2 1-1.9 1.8-2.9 2.9l-6.3 5.3c-21.9 17.1-55.6 30.9-84.6 30.9-6.5 0-22.4-1.1-27 0.8-7.4 3.2-8.6 14.1-3 19.4 3.2 3.1 7.8 4.3 12.8 4.7h15.5c26.5 0 52.7-8.5 70.5-17.3 2.5-1.3 4.3-2.5 7.1-3.9 7-3.5 14-7.9 20.3-12.7 2.2-1.7 4-3.2 6.1-4.8 3.8-3 14.9-12.7 16.7-16.2 3.7 2.5 5.6 6 8.8 9.1 7.7 7.6 16.5 14.1 25.5 20.1 5.7 3.7 11.6 6.6 18 9.2 19.9 7.9 41.4 10.3 62.6 7.7 9.7-1.1 20-4.2 28.9-7.5 8.5-3.1 16.5-7.3 24-12.4 3.8-2.5 7.2-5.1 10.6-7.8l9.3-8.7c2.9-3.4 7-5.6 9.4-9.1 1 0.7 2.7 2.1 3.8 3 8.4 7.1 9.2 10.6 24 20.5 1.9 1.3 2.6 2 4.5 3.1 3.2 1.7 5.9 3.5 9.3 5.2 22.6 11.3 48.1 12.4 71 1.1 8.6-4.2 17.2-9.8 23.9-16.6l15-15c1.9-1.9 3.3-3.4 5.2-5.2 1.8-1.8 3.2-3.2 4.9-4.9 1.9-2 2.8-3.5 4.9-5.5 3.6-3.5 6.2-7.8 10.3-10.6 1 4.3 6.6 10 9.3 13.2 1.7 2.2 3 4.1 5 6 10.4 10.4 14.5 17.1 30.6 26.1 15.8 8.8 31 15.3 49.2 18.4 5.8 0.9 13.6 2.2 20.3 2.2 27.6 0 43.8-6.2 64.5-14.7 2.4-1 3.3-1.9 5.6-3 7.1-3.5 20.2-11.7 25.6-18.3 4.8-5.8 2.3-15.5-4.2-18.6-6.8-3.2-12.3 0.6-17.3 4.6-1.8 1.4-3.1 2.5-4.8 3.9-2.9 2.2-7.3 4.9-10.5 6.8-29 16.7-68.9 19-99.5 6-10.6-4.5-23.9-12.3-31.8-20.3-1.1-1.1-1.6-1.8-3-2.8-2.3-1.8-3.7-3.8-5.6-5.9-15.9-17-27.3-45.8-53.5-19.6-8.5 8.5-15.7 18.1-24.3 26.6-1.9 1.9-2.7 3.3-4.6 5.2-11.7 11.6-28.6 25.3-45.8 25.3z"></path>
+                    </g>
+                    </svg>
+                    <div class="excursions__box-image left" data-sr-id="0" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: all, opacity 1.2s ease-in-out 0.1s, transform 1.2s ease-in-out 0.1s;">
+                    <span class="excursions__box-leg groups">Piscina de Ondas</span>
+                    <img src="./images/piscinaondas.png" class="img-fluid" alt="Grupos">
+                    </div>
+                </div>
+
+                <!-- Águas Aquecidas -->
+                <div class="col-12 col-md-4 mb-5 px-xl-4 excursions__box">
+                    <svg viewBox="0 0 128.67 172.43" class="excursions__box-element-best-age svg-wrapper">
+                    <path d="M47.68,5.85c-.52,2.55-.99,6.88-1.09,9.47-.34,9.29,2.31,18.43,5.27,27.1-20.24-7.3-35.11,5.91-44.54,22.41C5.33,68.33-.16,79.37,0,82.96c.16,3.51,3.58,5.22,6.77,4.34,2.57-.72,9.85-7.66,12.79-9.76,7.14-5.09,15.41-10.01,24.15-11.6-7.15,5.26-11.6,13.47-12.42,22.37-.56,6.12-1.33,26.75,9.74,19.81,6.07-9.34,11.36-20.7,20.47-27.51,1.66-1.24,6.41-5,8.12-3.42,2.69,2.5,6.1,13.14,7.06,16.95,4.75,18.75,4.02,39.59-1.66,58.04-1.24,4.04-6.07,13.54-5.18,16.91.94,3.6,5.64,4.35,8.2,1.93,2.93-2.77,8.06-20.6,9.19-25.35,4.67-19.55,3.78-43.34-3.21-62.24-.48-1.29-4.23-8.98-3.85-9.34,8.14.47,17.06,3.99,23.67,8.71,4.16,2.98,11.83,13.61,15.77,4.09,4.37-10.57-6.55-28.15-16.98-31.19-6.96-2.03-11.4.38-17.77,2.21-.46.13-1.44.79-1.33-.13,9.57-7.89,19.88-13.7,31.78-17.4,3.06-.95,10.99-1.84,12.47-4.32,3.12-5.24-2.83-8.57-6.68-10.81-15.57-9.04-34.33-8.47-47.65,4.22-2.2-8.09-6.06-16.36-11.54-22.77-4.38-5.13-12.03-11.66-14.25-.84ZM106.57,72.17l-13.91-5.99c5.38-3.18,11.93.68,13.91,5.99ZM77.22,41.62c6.39-11.77,20.66-14.38,32.72-10.71l-19.34,9.2-15.69,11.42c.35-4.02.38-6.35,2.31-9.92ZM57.15,17.96c5.68,7.45,8.41,17.55,8.15,26.87-2.77-2.39-4.76-7.62-5.89-11.14-1.63-5.06-2.55-10.41-2.26-15.73ZM42.02,87.03c.79-5.5,3.96-13.2,10.8-12.46l-10.8,12.46ZM45.14,65.46c.33.17-.28.81-.95.47-.33-.17.28-.81.95-.47ZM52.34,54.9c-11.75-.61-22.56,4.52-32.62,9.84,6.32-10.61,17.45-18.12,29.91-12.17.36.17,3.58,1.56,2.71,2.33Z"></path>
+                    </svg>
+                    <div class="excursions__box-image top" data-sr-id="9" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: all, opacity 1.2s ease-in-out 0.1s, transform 1.2s ease-in-out 0.1s;">
+                    <span class="excursions__box-leg best-age">Águas Quentinhas</span>
+                    <img src="./images/aquasquentes.png" class="img-fluid" alt="Melhor Idade">
+                    </div>
+                </div>
+
+                <!-- Área Kids -->
+                <div class="col-12 col-md-4 mb-5 px-xl-4 excursions__box ">
+                    <svg viewBox="0 0 100 100" class="excursions__box-element-school svg-wrapper">
+                        <path d="m195 367c-12.6 0-29.2-2.2-41.4-4.5-10.5-2.1-17.5-3.9-27.1-7.4-12.7-4.6-14.5-6.6-23.9-10.6-14.1-6-35.7-22.9-46.7-33.8-1.1-1.1-2-1.9-3-3-1.2-1.4-1.2-1.7-2.4-3.1-14.8-16.5-26.7-36-35.5-56.4-10.7-24.7-16.2-60.4-14-88.1 1.8-22.3 8.6-43.1 18.2-62.2 8.4-16.8 12.7-20.5 23.6-33.9l8-9.6c4.5-5.7 4-3.8 8.8-8.1l18.8-15.7c10.1-6.8 18.8-11.3 29.6-16.4 46.8-21.9 100.7-16.4 147.3 2.4 23.6 9.5 41.9 20.2 60.6 36.8 9.3 8.2 5.4 5.4 12.2 12.2 11 10.9 23.6 29.5 29.3 43.8l6.5 17.8c2.1 6.4 3.5 13 4.8 19.5 7.7 38.3 4.8 86.9-8.6 120.9l-6.9 15.4c-1.5 2.4-2.6 4.7-3.9 7-7.5 12.4-14.3 19.8-24.6 30.2-3.8 3.8-7.8 7-12.1 10.2-7.5 5.7-12.7 8.7-20.9 12.9-2.4 1.3-4.1 2.6-6.9 3.9-27.2 12.5-59.4 19.8-89.8 19.8zm-0.6-125.8c13.5 0 22.8-11 28.9-21.1 25.2-41.4 4.1-94.5-33-94.5-29.1 0-69.2 36.2-49.3 81.1 5.7 13.1 13.9 20.8 25.5 27.9 10.4 6.3 16.3 6.6 27.9 6.6zm-81-25.2c-1.6-3.9-2.4-6.3-3.7-10.5-1.1-3.8-1.6-7.2-2.3-11.9-1.9-12.8-0.2-26.2 3.7-37l8.9-19.5c-2.2-3.2-4.6-4.4-7.3-7l-43.4-37.7c-2.7-2-4.6-4.1-7.5-6-3.5 2.3-4.7 4.7-7 8.5-2.1 3.4-4 5.9-6 9.5-22.7 40.7-25.1 80-9.7 125.1l9.2 21.9 11.5 19.6c3.9-0.3 13.2-7.3 16.2-9.5 2.6-1.8 4.9-3.3 7.6-5.3 7.6-5.8 29.5-22.5 34.3-29.9-0.6-2.9-3.1-6.8-4.5-10.3zm141.2-74.8c5.2 10.6 8.8 21.3 8.8 34.4 0 20-3.3 26.5-3.4 33.2 4.1 1.1 15.5 8.4 19.5 10.8l36.2 24.7c3.3 2.2 5.6 3.8 8.8 6.1 2.1 1.5 7 5.1 9.2 5.7l4-15.5c9.7-38.2 7.6-81.7-5.5-116.9-5.4-14.8-20.2-37.8-31.7-45.5-0.8 3.2-4 5.1-6.2 7.3l-18.9 19.6c-4.5 4.5-8.4 8.4-12.9 12.9-3.3 3.3-10.5 9.7-12.7 13 1.8 3.3 3.1 6.8 4.8 10.2zm23.6-81.2c-17.9-9.5-23.1-13.6-44.9-20.7-26.7-8.8-57.7-13.5-85.4-7.6-8.3 1.8-17.5 4.5-24.8 7.8-10.6 4.7-12.2 5.9-21.9 11.2-2.2 1.3-3 1.8-5 3.1-8.1 5.2-10.6 7.9-14.1 10.2l50.2 45.2c9 7.4 6.8 6.4 13.2 2l16.9-8.8c39-16.5 64.5 6.1 67.8 7 0 0 48-49.4 48-49.4zm-70.3 277.3c14.3-1.2 13.8-0.3 29.6-4.2 11-2.8 15.5-4.3 25.6-8.3 9.2-3.7 13.7-6.4 22.1-11 10.7-5.8 32.9-24.1 35-32-1.8-0.5-3-1.7-4.6-2.8l-48.2-33c-23.3-14-16.7-12.7-26-0.3-0.9 1.1-1.5 2.1-2.3 3.1-9.8 12.1-27.8 21.5-44.7 21.5-20.3 0-31.4-3.8-47.8-13.8-1.9-1.2-3.4-2.4-5.1-3.7-2.5-2-2.4-1.9-5.3-3.5-2.8 4.3-6.7 6.7-9.6 9.4-6.7 5.9-24.2 20.2-31.2 24.9-3.3 2.1-12.3 7.9-14 10.4 0.8 2.8 7.5 7.6 10.1 9.5l11.6 8.1c26.6 17.6 60.5 26.3 95.3 26.3z"></path>
+                    </svg>
+                    <div class="excursions__box-image right" data-sr-id="4" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: all, opacity 1.2s ease-in-out 0.1s, transform 1.2s ease-in-out 0.1s;">
+                    <span class="excursions__box-leg school">Área Kids</span>
+                    <img src="./images/areakids.png" class="img-fluid" alt="Escola">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery -->
+            <!-- <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/atracoes-piscinas.png" alt="Piscinas Aquecidas">
+                    <div class="gallery-item-overlay">
+                        <span><i class="bi bi-droplet-fill me-1"></i> Piscinas Aquecidas</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/toboaguas.png" alt="Toboáguas Radicais">
+                    <div class="gallery-item-overlay">
+                        <span><i class="bi bi-lightning-fill me-1"></i> Toboáguas Radicais</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/familia-feliz.png" alt="Diversão em Família">
+                    <div class="gallery-item-overlay">
+                        <span><i class="bi bi-people-fill me-1"></i> Diversão em Família</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/convite-especial.png" alt="Área de Lazer">
+                    <div class="gallery-item-overlay">
+                        <span><i class="bi bi-sun-fill me-1"></i> Área de Lazer</span>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+
+        <!-- CTA SECTION -->
+    <section id="video" class="cta-section">
+        <div class="container">
+            <h2 class="animate-fade-in-up">Pronto para a Aventura?</h2>
+            <p class="animate-fade-in-up">
+                Garanta seu ingresso agora e aproveite um dia inesquecível no Termas PACU!
+            </p>
+            <a href="https://wa.me/5500000000000?text=Olá! Gostaria de comprar ingressos para o Termas PACU!" 
+               target="_blank" class="btn-whatsapp whatsapp-shake animate-fade-in-up">
+                <i class="bi bi-whatsapp me-2"></i> Comprar pelo WhatsApp
+            </a>
+        </div>
+    </section>
+
 
     <!-- PACOTES SECTION -->
-    <section id="pacotes" class="pacotes-section">
+    <section id="convite" class="pacotes-section">
         <div class="container">
             <div class="text-center">
                 <span class="section-badge"><i class="bi bi-tag-fill"></i> Ingressos Imperdivéis</span>
@@ -397,7 +722,7 @@
     </section>
 
     <!-- ATRAÇÕES SECTION -->
-    <section class="atracoes-section">
+    <!-- <section class="atracoes-section">
         <div class="container">
             <div class="text-center mb-5">
                 <span class="section-badge" style="background: var(--green-tropical);"><i class="bi bi-water"></i> O que está incluído</span>
@@ -464,21 +789,7 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- CTA SECTION -->
-    <section class="cta-section">
-        <div class="container">
-            <h2 class="animate-fade-in-up">Pronto para a Aventura?</h2>
-            <p class="animate-fade-in-up">
-                Garanta seu ingresso agora e aproveite um dia inesquecível no Termas PACU!
-            </p>
-            <a href="https://wa.me/5500000000000?text=Olá! Gostaria de comprar ingressos para o Termas PACU!" 
-               target="_blank" class="btn-whatsapp whatsapp-shake animate-fade-in-up">
-                <i class="bi bi-whatsapp me-2"></i> Comprar pelo WhatsApp
-            </a>
-        </div>
-    </section>
+    </section> -->
 
     <!-- ============================================
          FOOTER
