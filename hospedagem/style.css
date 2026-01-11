@@ -443,7 +443,7 @@ section[id] {
 }
 
 .footer-nav a:hover {
-  color: var(--orange-primary);
+  color: var(--green-tropical);
 }
 
 /* SOCIAL */
@@ -461,7 +461,7 @@ section[id] {
 
 .footer-social a:hover {
   transform: translateY(-3px);
-  color: var(--orange-primary);
+  color: var(--green-tropical);
 }
 
 .footer-copy {

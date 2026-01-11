@@ -227,7 +227,7 @@ section[id] {
         .hero-bg {
             position: absolute;
             inset: 0;
-            background: url('images/hero-termas.png') center/cover no-repeat;
+            background: url('images/banner.png') center/cover no-repeat;
         }
 
         .hero-overlay {
