@@ -217,7 +217,7 @@ section[id] {
         ============================================ */
         .hero-section {
             position: relative;
-            min-height: 100vh;
+            min-height: 95vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -569,7 +569,7 @@ section[id] {
 
         @media (min-width: 768px) {
             .gallery-grid {
-                grid-template-columns: repeat(4, 1fr);
+                grid-template-columns: repeat(3, 2fr);
             }
         }
 
@@ -588,7 +588,7 @@ section[id] {
         }
 
         .gallery-item:hover img {
-            transform: scale(1.1);
+            /* transform: scale(1.1); */
         }
 
         .gallery-item-overlay {
@@ -599,7 +599,7 @@ section[id] {
             align-items: flex-end;
             padding: 1rem;
             opacity: 0;
-            transition: opacity 0.3s ease;
+            /* transition: opacity 0.3s ease; */
         }
 
         .gallery-item:hover .gallery-item-overlay {
@@ -612,12 +612,34 @@ section[id] {
             font-size: 0.875rem;
         }
 
+
+                /* BENEFÍCIOS SECTION */
+        .beneficios-section {padding: 4rem 0; background: var(--orange-primary); }
+        .beneficio-item { text-align: center; color: var(--white); }
+        .beneficio-icon {
+            width: 56px; height: 56px; background: rgba(255,255,255,0.2); border-radius: 12px;
+            display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;
+        }
+        .beneficio-icon i { font-size: 1.75rem; }
+        .beneficio-item h3 { font-size: 1rem; margin-bottom: 0.5rem; }
+        .beneficio-item p { color: rgba(255,255,255,0.8); font-size: 0.875rem; margin: 0; }
+
+        .container-beneficios {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .icon-beneficio{
+            width: 30%;
+        }
+
         /* ============================================
            VIDEO SECTION
         ============================================ */
         .video-section {
             padding: 10rem 0;
-            background: var(--blue-water);
+            background: var(--orange-primary);
             position: relative;
         }
 
@@ -662,7 +684,7 @@ section[id] {
             align-items: center;
             justify-content: center;
             font-size: 2rem;
-            color: var(--blue-water);
+            color: var(--orange-primary);
             margin-bottom: 1rem;
             box-shadow: var(--shadow-lg);
             transition: all 0.3s ease;
