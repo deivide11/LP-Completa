@@ -279,17 +279,17 @@
     <!-- ============================================
          VIDEO SECTION
     ============================================ -->
-    <section id="video" class="video-section">
+    <section id="conhecer" class="video-section">
         <div class="container">
             <div class="text-center mb-5">
-                <span class="section-badge" style="background: var(--yellow-accent); color: var(--black);">
+                <span class="section-badge" style="background: var(--yellow-accent); color: var(--orange-primary);">
                     <i class="bi bi-play-circle"></i>
                     Vídeo Promocional
                 </span>
-                <h2 class="section-title">
+                <h2 class="section-title" style="color: var(--white);">
                     Conheça o <span class="highlight" style="color: var(--yellow-accent);">Pacu</span>
                 </h2>
-                <p class="section-subtitle">
+                <p class="section-subtitle" style="color: var(--white);">
                     Assista ao nosso vídeo e descubra tudo que preparamos para você!
                 </p>
             </div>
@@ -301,9 +301,31 @@
                     </div>
                     <p>* Clique para assistir ao vídeo promocional</p>
                 </div>
+
+                <div id="youtube-video" class="ratio ratio-16x9 rounded-4 overflow-hidden d-none">
+                    <iframe
+                        id="yt-iframe"
+                        src=""
+                        title="Vídeo Promocional Pacu"
+                        frameborder="0"
+                        allow="autoplay; encrypted-media; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
             </div>
         </div>
     </section>
+    <script>
+    function openVideo() {
+        const placeholder = document.querySelector('.video-placeholder');
+        const video = document.getElementById('youtube-video');
+        const iframe = document.getElementById('yt-iframe');
+
+        iframe.src = "https://www.youtube.com/embed/HRCLl24zuJc?autoplay=1&controls=1&rel=0";
+        placeholder.style.display = "none";
+        video.classList.remove('d-none');
+    }
+    </script>
 
     <!-- ============================================
          CONVITE SECTION
@@ -429,17 +451,6 @@
                 }
             });
         });
-
-        // Função para abrir vídeo (substitua pelo link do YouTube)
-        function openVideo() {
-            // Substitua 'VIDEO_ID' pelo ID do vídeo do YouTube
-            const videoId = 'VIDEO_ID';
-            window.open(`https://www.youtube.com/watch?v=${videoId}`, '_blank');
-            
-            // Ou para abrir em modal, você pode usar:
-            // const videoUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
-            // Implementar modal com iframe
-        }
 
         // Animação ao scroll
         const observerOptions = {

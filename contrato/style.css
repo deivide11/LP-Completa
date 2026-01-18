@@ -587,9 +587,6 @@ section[id] {
             transition: transform 0.5s ease;
         }
 
-        .gallery-item:hover img {
-            /* transform: scale(1.1); */
-        }
 
         .gallery-item-overlay {
             position: absolute;
@@ -634,12 +631,12 @@ section[id] {
             width: 30%;
         }
 
-        /* ============================================
+             /* ============================================
            VIDEO SECTION
         ============================================ */
         .video-section {
+            background-color: var(--orange-primary);
             padding: 10rem 0;
-            background: var(--orange-primary);
             position: relative;
         }
 
@@ -675,6 +672,11 @@ section[id] {
             transform: scale(1.02);
         }
 
+        .video-placeholder {
+            background: url("https://img.youtube.com/vi/HRCLl24zuJc/maxresdefault.jpg") center/cover no-repeat;
+        }
+
+
         .play-button {
             width: 80px;
             height: 80px;
@@ -692,8 +694,8 @@ section[id] {
 
         .video-placeholder:hover .play-button {
             transform: scale(1.1);
-            background: var(--yellow-accent);
-            color: var(--black);
+            background: var(--orange-primary);
+            color: var(--white);
         }
 
         .video-placeholder p {

@@ -471,6 +471,11 @@
             transform: scale(1.02);
         }
 
+        .video-placeholder {
+    background: url("https://img.youtube.com/vi/RO1nNmY-vGo/maxresdefault.jpg") center/cover no-repeat;
+}
+
+
         .play-button {
             width: 80px;
             height: 80px;
@@ -642,7 +647,7 @@
                     </svg>
                     <div class="excursions__box-image left" data-sr-id="0" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: all, opacity 1.2s ease-in-out 0.1s, transform 1.2s ease-in-out 0.1s;">
                     <span class="excursions__box-leg groups">Bar Molhado</span>
-                    <img src="./images/barmolhado.jpg" class="img-fluid" alt="Grupos">
+                    <img src="./images/barmolhado.png" class="img-fluid" alt="Grupos">
                     </div>
                 </div>
 
@@ -653,7 +658,7 @@
                     </svg>
                     <div class="excursions__box-image top" data-sr-id="9" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: all, opacity 1.2s ease-in-out 0.1s, transform 1.2s ease-in-out 0.1s;">
                     <span class="excursions__box-leg best-age">FreeFall - KamiKaze</span>
-                    <img src="./images/freefall.jpg" class="img-fluid" alt="Melhor Idade">
+                    <img src="./images/freefall.png" class="img-fluid" alt="Melhor Idade">
                     </div>
                 </div>
 
@@ -664,7 +669,7 @@
                     </svg>
                     <div class="excursions__box-image right" data-sr-id="4" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: all, opacity 1.2s ease-in-out 0.1s, transform 1.2s ease-in-out 0.1s;">
                     <span class="excursions__box-leg school">Pacu Dance</span>
-                    <img src="./images/pacudance.jpg" class="img-fluid" alt="Escola">
+                    <img src="./images/pacudance.png" class="img-fluid" alt="Escola">
                     </div>
                 </div>
             </div>
@@ -715,7 +720,7 @@
     </section>
 
 
-        <section id="conhecer" class="video-section">
+    <section id="conhecer" class="video-section">
         <div class="container">
             <div class="text-center mb-5">
                 <span class="section-badge" style="background: var(--orange-primary); color: var(--white);">
@@ -737,10 +742,31 @@
                     </div>
                     <p>* Clique para assistir ao vídeo promocional</p>
                 </div>
+
+                <div id="youtube-video" class="ratio ratio-16x9 rounded-4 overflow-hidden d-none">
+                    <iframe
+                        id="yt-iframe"
+                        src=""
+                        title="Vídeo Promocional Pacu"
+                        frameborder="0"
+                        allow="autoplay; encrypted-media; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
             </div>
         </div>
     </section>
+    <script>
+    function openVideo() {
+        const placeholder = document.querySelector('.video-placeholder');
+        const video = document.getElementById('youtube-video');
+        const iframe = document.getElementById('yt-iframe');
 
+        iframe.src = "https://www.youtube.com/embed/RO1nNmY-vGo?autoplay=1&rel=0";
+        placeholder.style.display = "none";
+        video.classList.remove('d-none');
+    }
+    </script>
 
     <!-- PACOTES SECTION -->
     <section id="convite" class="pacotes-section">
