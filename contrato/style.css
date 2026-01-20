@@ -185,12 +185,13 @@ section[id] {
 
 /* LOGO */
 .logo {
+    color: transparent;
   font-size: 1.4rem;
   font-weight: 700;
 }
 
 .logo span {
-  color: var(--orange-primary);
+  color: transparent;
 }
 
 /* LINKS */
@@ -227,7 +228,7 @@ section[id] {
         .hero-bg {
             position: absolute;
             inset: 0;
-            background: url('images/banner.png') center/cover no-repeat;
+            background: url('images/banner-min.png') center/cover no-repeat;
         }
 
         .hero-overlay {
